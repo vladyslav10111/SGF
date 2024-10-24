@@ -1,9 +1,3 @@
-# Ігноруємо все, крім wp-content, docker-compose.yml і документації
-/*
-!wp-content/
-!docker-compose.yml
-!README.md
-!.gitignore
 
 # Ігноруємо WordPress ядро, якщо воно потрапить в проект випадково
 wp-admin/
