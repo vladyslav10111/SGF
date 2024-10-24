@@ -1,0 +1,58 @@
+# Ігноруємо все, крім wp-content, docker-compose.yml і документації
+/*
+!wp-content/
+!docker-compose.yml
+!README.md
+!.gitignore
+
+# Ігноруємо WordPress ядро, якщо воно потрапить в проект випадково
+wp-admin/
+wp-includes/
+index.php
+license.txt
+readme.html
+wp-*.php
+
+# Ігноруємо файли вмісту WordPress, які не мають відношення до кастомного коду
+wp-content/debug.log
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/cache/
+
+# Ігноруємо специфічні файли PHPStorm
+.idea/
+*.iml
+
+# Ігноруємо Docker-файли, які можуть бути специфічними для середовища
+docker-compose.override.yml
+docker-sync.yml
+.env
+.env.local
+.env.*.local
+docker/*.log
+docker/db_data/
+docker/volumes/
+
+# Ігноруємо лог-файли та тимчасові файли
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Ігноруємо залежності, які можуть бути встановлені через Composer або npm/yarn
+vendor/
+node_modules/
+
+# Ігноруємо налаштування операційних систем
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.orig
+
+# Ігноруємо дані кешу
+wp-content/cache/
+wp-content/backup/
